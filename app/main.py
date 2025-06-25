@@ -57,11 +57,18 @@ label_map = {
 
 # --- Text Processing ---
 def clean_text(text):
+    import nltk
+    from nltk.corpus import stopwords
+    
+    try:
+        stop_words = set(stopwords.words("english"))
+    except LookupError:
+        nltk.download("stopwords")
+        stop_words = set(stopwords.words("english"))
+
     text = text.lower()
     text = re.sub(r'[^a-zA-Z\s]', '', text)
     tokens = text.split()
-    from nltk.corpus import stopwords
-    stop_words = set(stopwords.words("english"))
     filtered = [word for word in tokens if word not in stop_words]
     return ' '.join(filtered)
 
