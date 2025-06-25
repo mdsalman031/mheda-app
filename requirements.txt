@@ -1,8 +1,9 @@
 streamlit
-scikit-learn
 pandas
-matplotlib
-nltk
-joblib
-datasets
 plotly
+joblib
+requests
+streamlit-lottie
+scikit-learn
+nltk
+datasets
