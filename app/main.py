@@ -18,8 +18,8 @@ st.set_page_config(
 # --- Load Resources ---
 @st.cache_resource
 def load_resources():
-    model = joblib.load("../models/emotion_model.pkl")
-    vectorizer = joblib.load("../models/tfidf_vectorizer.pkl")
+    model = joblib.load("models/emotion_model.pkl")
+    vectorizer = joblib.load("models/tfidf_vectorizer.pkl")
     return model, vectorizer
 
 model, vectorizer = load_resources()
