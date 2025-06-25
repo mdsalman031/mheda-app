@@ -1,0 +1,49 @@
+# === Python basics ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.log
+
+# === Virtual environments ===
+.env/
+.venv/
+env/
+venv/
+
+# === Jupyter Notebook checkpoints ===
+.ipynb_checkpoints/
+
+# === Streamlit cache ===
+.streamlit/config.toml
+.streamlit/*.json
+.streamlit/*.lock
+.streamlit/*.pid
+
+# === IDEs ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Model & data (optional) ===
+# If you're ready to commit .pkl files, make sure to REMOVE these lines:
+# models/
+# *.pkl
+
+# === Large files/data ===
+data/
+*.csv
+*.tsv
+*.jsonl
+*.zip
+*.tar.gz
+
+# === Temporary files ===
+*.bak
+*.tmp
+*.swp
